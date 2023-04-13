@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bitcoin Prices</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- HTML page with a form that allows the user to enter the bitcoin symbols separated by commas. -->
+    <div class="container mt-5">
+      <h1>Bitcoin Prices</h1>
+      <form id="btc-form">
+        <div class="form-group">
+          <label for="btc-symbols"
+            >Enter Bitcoin symbols separated by commas:</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="btc-symbols"
+            name="btc-symbols"
+            placeholder="BTC,ETH,XRP"
+          />
+        </div>
+        <!-- a button that submits the form and sends the data to the server. -->
+        <button type="submit" class="btn btn-primary">Get Prices</button>
+      </form>
+      <div class="mt-5">
+        <canvas id="btc-chart"></canvas>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
